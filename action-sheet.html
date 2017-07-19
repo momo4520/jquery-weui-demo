@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>action-sheet</title>
+	<link rel="stylesheet" href="lib/css/weui.css">
+	<link rel="stylesheet" href="lib/css/jquery-weui.min.css">
+	<link rel="stylesheet" href="css/demo.css">
+</head>
+<body ontouchstart>
+	<header class="demos-header">
+		<h2 class="demos-title">操作列表</h2>
+	</header>
+	<div class="demos-content-padded">
+		<a href="javascript:;" id="show-actions" class="weui-btn weui-btn_primary">显示操作</a>
+		<a href="javascript:;" id="show-actions-bg" class="weui-btn weui-btn_primary">自定义背景色</a>
+	</div>
+	<script src="lib/js/jquery.min.js"></script>
+	<script src="lib/js/jquery-weui.min.js"></script>
+	<script src="lib/js/fastclick.js"></script>
+	<script src="js/demo.js"></script>
+	<script>
+		$(function(){
+			FastClick.attach(document.body);
+		});
+	</script>
+</body>
+</html>
