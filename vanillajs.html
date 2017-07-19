@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box {
+            background-color: #333;
+            width:100px;
+            height:100px;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+
+</div>
+<script src="lib/js/vanilla.js"></script>
+<script>
+    var s = document.getElementById('box').style;
+    s.opacity = 1;
+    (function fade() {
+        (s.opacity -= .1) <0 ? s.display = "none" : setTimeout(fade, 400);
+    })()
+</script>
+</body>
+</html>
